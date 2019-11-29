@@ -1,6 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render_to_response
 
-# Create your views here.
-
-def post_list(request):
-    return render(request, 'post_list.html', {})
+def index (request):
+    return render_to_response('index.html')

@@ -1,9 +1,24 @@
 
 
 body {
-    background: white url("images/background.jpg") no-repeat center fixed;
+    background: white url("images/fondo.png") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+}
+
+#fondo-superior {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+#fondo-inferior {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 0;
 }
