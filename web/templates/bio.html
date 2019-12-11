@@ -1,39 +1,16 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="favicon.ico">
+{% block content %}
 
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<h1>Bio<h2>
 
-        <title>Bio</title>
+<div id="contenido"><p>Poveglia (Buenos Aires) es una banda de Rock formada por: Martol en guitarra y voces, Diego Zaccara en bajo y voces
+        y Matías Macrett en percusión y batería.
+        Poveglia fue gestada en el año 2014. Luego de algunas presentaciones en vivo, grabaron su primer disco titulado "Yersinia Pestis"(2015),
+        que fue presentado por todo el circuito musical de Capital y Gran Buenos Aires.
+        "Yersinia Pestis" fue valorado y recomendado por revistas y portales gráficos y radiales dentro y fuera de la matrix.
+        Trío soberbio de aire renovado que destripa sus temas en complicidad y libertinaje. Esta comunión y respeto musical
+        los lleva al estudio Romaphonic de Buenos Aires, Argentina, para grabar su segundo trabajo titulado "Memento Mori"(2017).
+        Poveglia sigue remando los crudos inviernos de la escena local y trabajando en su tercer disco.</p></div>
 
-      	  {# Cargamos la librería #}
-      	  {% load bootstrap4 %}
-
-      	  {# CSS Bootstrap #}
-      	  {% bootstrap_css %}
-
-          {% bootstrap_javascript jquery='full' %}
-    </head>
-
-    <body>
-      <h1>Bio<h2>
-
-      <div id="contenido"><p>Poveglia (Buenos Aires) es una banda de Rock formada por: Martol en guitarra y voces, Diego Zaccara en bajo y voces
-              y Matías Macrett en percusión y batería.
-              Poveglia fue gestada en el año 2014. Luego de algunas presentaciones en vivo, grabaron su primer disco titulado "Yersinia Pestis"(2015),
-              que fue presentado por todo el circuito musical de Capital y Gran Buenos Aires.
-              "Yersinia Pestis" fue valorado y recomendado por revistas y portales gráficos y radiales dentro y fuera de la matrix.
-              Trío soberbio de aire renovado que destripa sus temas en complicidad y libertinaje. Esta comunión y respeto musical
-              los lleva al estudio Romaphonic de Buenos Aires, Argentina, para grabar su segundo trabajo titulado "Memento Mori"(2017).
-              Poveglia sigue remando los crudos inviernos de la escena local y trabajando en su tercer disco.</p></div>
-
-      <img id="fondo-superior" src="static/images/superior.png">
-      <img id="fondo-inferior" src="static/images/inferior.png">
-    </body>
-</html>
+{% endblock %}

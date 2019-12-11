@@ -1,28 +1,30 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="favicon.ico">
+{% block content %}
 
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<h1>News<h2>
 
-        <title>Poveglia </title>
+  <div class="white-text" href="contenido"><p>SÁBADO, 21 DE DICIEMBRE DE 2019 DE 23:00 A 3:00
+     Ragnarok Vivo (Vol. IV) Riel, Radiactivo, Poveglia en vivo
 
-      	  {# Cargamos la librería #}
-      	  {% load bootstrap4 %}
+     La posada de los muertos y BaterosArgentinos.com Presentan:
+     RIEL Metal Pesado, Poveglia y Radiocativo, en vivo
+     Despedimos 2019 y descorchamos música en vivo tocada por seres humanos. Sábado 21 de Diciembre. Ampliaremos!
+     Volvemos a Villa Constitución.
+     14 de Febrero 333, 2919 Villa Constitución(Sta Fe)</p>
 
-      	  {# CSS Bootstrap #}
-      	  {% bootstrap_css %}
+    <p>@Ciclo Maquinarte vol lll | 14 de Diciembre de 2019
+      Estomba 851 - Otra Historia Club Cultural - C.A.B.A Entradas $100.
 
-          {% bootstrap_javascript jquery='full' %}
-    </head>
+      Desde Capitán Bermudez, Santa fe, llega FLANNEL.
+      Jugando de local se presenta el trío de Rock alternativo AZOTEQA.
+      POVEGLIA nos trae una buena dosis de oscuridad y potencia para cerrar el año
+      ALEXIS CARDUÑO va a estar abriendo la velada con un show acústico
+      Y ADEMÀS...
+      Expo de arte y fotografía
+      Proyecciones de videoclips de bandas emergentes
+      Birra barata
+      Variedad de comidas (Opciones veganas)</p>
+    </div>
 
-    <body>
-      <img id="fondo-superior" src="static/images/superior.png">
-      <img id="fondo-inferior" src="static/images/inferior.png">
-    </body>
-</html>
+{% endblock %}

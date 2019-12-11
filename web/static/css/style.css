@@ -6,20 +6,76 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: #f0f0ff;
 
 }
 
 #fondo-superior {
     position: fixed;
     top: 0px;
-    height: 100%;
+    height: 100px;
     width: 100%;
     z-index: 0;
+    background: transparent url("../images/superior.png") repeat-x;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
 #fondo-inferior {
     position: fixed;
     bottom: 0px;
+    height: 100px;
     width: 100%;
     z-index: 0;
+    background: transparent url("../images/inferior.png") repeat-x;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+#logo {
+  width: 250px;
+}
+
+#contenido {
+  color: #f0f0ff;
+  padding: 10%;
+}
+
+.bio-link{
+  padding: 100px;
+  width: 275px;
+  cursor: pointer;
+}
+
+.vids-link {
+  padding: 100px;
+    width: 290px;
+    cursor: pointer;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 844px) {
+  #menu-mobile {
+    display: inline;
+  }
+  #menu .bio-link, #menu .vids-link {
+    display: none;
+  }
+#menu-mobile .bio-link, #menu-mobile .vids-link {
+  padding: 0px;
+  width: 80px;
+}
+
 }

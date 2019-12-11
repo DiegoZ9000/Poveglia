@@ -23,7 +23,6 @@ from web import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('bio', views.bio, name='bio'),
-    path('links', views.links, name='links'),
-    path('news', views.news, name='news'),
+    path('vids', views.vids, name='vids'),
     path('admin/', admin.site.urls),
 ]
