@@ -52,17 +52,35 @@ body {
   font-family: 'Girassol', cursive;
 }
 
-.bio-link{
-  padding: 100px;
-  width: 275px;
-  cursor: pointer;
+.l-50{
+  left: 50px;
 }
 
-.vids-link {
-  padding: 100px;
-    width: 290px;
-    cursor: pointer;
+.r-50 {
+  right: 50px;
 }
+
+.menu-item {
+  position: absolute;
+  color: #3CB371;
+  padding: 100px;
+  width: 290px;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: 'Girassol', cursive;
+  cursor: pointer;
+ }
+
+ .menu-item {
+   position: absolute;
+   color: #3CB371;
+   padding: 100px;
+   width: 290px;
+   font-size: 30px;
+   cursor: pointer;
+   font-family: 'Girassol', cursive;
+   cursor: pointer;
+  }
 
 #menu-mobile {
   display: none;
