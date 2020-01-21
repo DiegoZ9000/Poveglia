@@ -63,7 +63,7 @@ body {
 .menu-item {
   position: absolute;
   color: #3CB371;
-  padding: 100px;
+  padding: 70px;
   width: 290px;
   font-size: 30px;
   cursor: pointer;
@@ -74,7 +74,7 @@ body {
  .menu-item {
    position: absolute;
    color: #3CB371;
-   padding: 100px;
+   padding: 70px;
    width: 290px;
    font-size: 30px;
    cursor: pointer;
@@ -98,4 +98,12 @@ body {
   width: 80px;
 }
 
+.ul {
+  display: flex;
+  grid-template-columns: 50% 50%;
+  width: 100px;
+}
+
+.new-image nth-child(even) .ul {
+  flex-direction: row-reverse;
 }
