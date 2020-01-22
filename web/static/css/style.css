@@ -99,11 +99,7 @@ body {
 }
 
 .ul {
-  display: flex;
+  display: grid;
   grid-template-columns: 50% 50%;
   width: 100px;
-}
-
-.new-image nth-child(even) .ul {
-  flex-direction: row-reverse;
 }
