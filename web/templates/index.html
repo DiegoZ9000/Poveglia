@@ -5,16 +5,14 @@
 <h1>News<h2>
 
   {% if latest_news_list %}
-      <div style= "float: left; width: 50%;">
+      <div>
       {% for new in latest_news_list %}
         <div class="new" style="display:block; margin:10%;">
-          <div class="new-text" style="display:inline; width:80%;">
-            <ul>
-             <li>{{ new.text }}
-            </ul>
+          <div class="new-text" style="display:block; width:80%; float:left;">
+            {{ new.text }}
           </div>
-          <div>
-            <img class="new-image" src="static/images/peart.jpeg" style="display:inline; width:20%;">
+          <div style="display:block; width:20%; float:left;">
+            <img class="new-image" src="static/images/peart.jpeg">
           </div>
         </div>
       {% endfor %}
